@@ -1,0 +1,15 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: rjain/buildbox}
+
+params:
+  VAULT_SECRET:
+
+inputs:
+  - name: repo
+
+run:
+  path: repo/tasks/task.sh
