@@ -9,8 +9,10 @@ resources:
 
 jobs:
 - name: hello-world
+  public: true
   plan:
+  - get: repo
   - task: say-hello
-    file: repo/test-pipeline/tasks/task.yml
+    file: repo/tasks/task.yml
     params:
       VAULT_SECRET: ((vault-secret))
