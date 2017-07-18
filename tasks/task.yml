@@ -12,4 +12,4 @@ inputs:
   - name: repo
 
 run:
-  path: repo/tasks/task.sh
+  path: repo/test-pipeline/tasks/task.sh
