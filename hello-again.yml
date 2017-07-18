@@ -2,10 +2,10 @@ resources:
 - name: repo
   type: git
   source:
-    uri: {{git-vault-pipeline}}
-    branch: {{github_branch}}
-    username: {{github_username}}
-    password: {{github_token}}
+    uri: ((github-uri))
+    branch: ((github-branch))
+    username: ((github-username))
+    password: ((github-token))
 
 jobs:
 - name: hello-world
