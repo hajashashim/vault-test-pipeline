@@ -7,7 +7,6 @@ image_resource:
 
 params:
   VAULT_SECRET:
-  FOO: 
 
 inputs:
   - name: repo
