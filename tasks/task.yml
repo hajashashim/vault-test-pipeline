@@ -3,10 +3,11 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: {repository: rjain/buildbox}
+  source: {repository: alpine}
 
 params:
   VAULT_SECRET:
+  FOO: 
 
 inputs:
   - name: repo
