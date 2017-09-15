@@ -9,7 +9,7 @@ resources:
 
 jobs:
 - name: hello-world
-  public: true
+  public: false
   plan:
   - get: repo
   - task: say-hello
