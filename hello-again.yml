@@ -16,3 +16,4 @@ jobs:
     file: repo/tasks/task.yml
     params:
       VAULT_SECRET: ((vault-secret))
+      FOO: {{foo}}
