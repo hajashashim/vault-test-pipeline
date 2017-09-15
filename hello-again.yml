@@ -2,10 +2,10 @@ resources:
 - name: repo
   type: git
   source:
-    uri: ((github-uri))
-    branch: ((github-branch))
-    username: ((github-username))
-    password: ((github-token))
+    uri: https://github.com/corelogic/vault-test-pipeline.git
+    branch: master
+    username: clbuildteam
+    password: ((github.clbuildteam.token))
 
 jobs:
 - name: hello-world
@@ -15,5 +15,5 @@ jobs:
   - task: say-hello
     file: repo/tasks/task.yml
     params:
-      VAULT_SECRET: ((vault-secret))
+      VAULT_SECRET: {{vault-secret}}
       FOO: {{foo}}
