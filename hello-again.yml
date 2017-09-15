@@ -13,6 +13,6 @@ jobs:
   plan:
   - get: repo
   - task: say-hello
-    file: repo/tasks/task.yml
+    file: ./tasks/task.yml
     params:
       VAULT_SECRET: ((vault-secret))
