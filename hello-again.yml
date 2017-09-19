@@ -5,7 +5,7 @@ resources:
     uri: https://github.com/corelogic/vault-test-pipeline.git
     branch: master
     username: clbuildteam
-    password: ((github.clbuildteam.token))
+    password: ((git.token))
 
 jobs:
 - name: hello-world
@@ -16,4 +16,4 @@ jobs:
     file: repo/tasks/task.yml
     params:
       VAULT_SECRET: {{vault-secret}}
-      FOO: {{foo}}
+      FOO: {{foovar}}
